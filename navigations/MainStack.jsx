@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import MainTab from "./MainTab";
+import TabBarIcon from "./MainTab";
 //import { Home, Check, Mode, List, Settings } from "../screens";
 //import theme from "../src/theme";
 //import { ThemeContext } from "styled-components";

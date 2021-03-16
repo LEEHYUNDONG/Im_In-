@@ -1,5 +1,5 @@
 //home screen icon
-import homeScr from "../assets/icon/home/png";
+import homeScr from "../assets/icon/home.png";
 import check1 from ".../assets/icon/check1.png";
 import check2 from ".../assets/icon/check2.png";
 import checkList from ".../assets/icon/list.png";
