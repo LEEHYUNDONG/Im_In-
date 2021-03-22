@@ -1,13 +1,11 @@
 import React from "react";
-import { ImageBackground } from "react-native";
+import { ImageBackground, SafeAreaView, StatusBar } from "react-native";
 import styled from "styled-components/native";
 import { theme } from "./theme";
 import { ThemeProvider } from "styled-components/native";
-import Navigation from "../navigations/index";
+import Navigation from "../src/navigations";
 
-//const backIMG = { uri: "../assets/backgroundIMG/loading.png" };
-//
-//background-image: url("../assets/backgroundIMG/loading.png");
+
 const Container = styled.View`
   flex-direction: row;
   align-items: center;
@@ -15,29 +13,17 @@ const Container = styled.View`
   top: 450px;
 `;
 
-/*
-const Image = styled.Image`
-  flex: 1;
-  resizemode: "cover";
-  justifycontent: "center";
-`;
-*/
+
 
 const App = () => {
-  /*
-  return (
-    <Container>
-      <IconButton type={images.homeScr} />
-      <IconButton type={images.checkOne} />
-      <IconButton type={images.checkTwo} />
-      <IconButton type={images.checkList} />
-      <IconButton type={images.setting} />
-    </Container>
-  );*/
   return (
     <ThemeProvider theme={theme}>
+      <StatusBar barStyle="dark-content" />
       <Navigation />
     </ThemeProvider>
   );
 };
 export default App;
+
+
+//<StatusBar barStyle="black-content"/>

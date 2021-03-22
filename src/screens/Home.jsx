@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components/native";
-import { Text, View } from "react-native";
+import { Text, SafeAreaView } from "react-native";
 
-const Container = styled.View`
+const Container = styled.SafeAreaView`
   flex: 1;
-  background-color: ${({theme}) => theme.background};
-
+  background-color: ${({ theme }) => theme.background};
 `;
 
-/*class Home extends Component {
+/*
+class Home extends Component {
   render() {
     return (
       <View
