@@ -19,9 +19,9 @@ const AuthStack = () => {
         component={Login}
         options={{
           headerTitle: "Login",
-          headerBackTitleVisible: true,
+          headerBackTitleVisible: false,
           headerBackTitle: "Login",
-          headerTitleStyle: { fontSize: 24 },
+          headerTitleStyle: { fontSize: 16 },
           headerTintColor: "#000000",
           headerBackImage: ({ tintColor }) => {
             const style = {
@@ -31,7 +31,7 @@ const AuthStack = () => {
             return (
               <MaterialIcons
                 name="login"
-                size={30}
+                size={24}
                 color={tintColor}
                 style={style}
               />

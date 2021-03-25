@@ -39,35 +39,40 @@ const MainTab = () => {
         name="Home"
         component={Home}
         options={{
-          tabBarLabel: "Home"
+          tabBarLabel: "Home",
+          headerTitle: "Home"
         }}
       />
       <Tab.Screen
         name="Check"
         component={Check}
         options={{
-          tabBarLabel: "Check"
+          tabBarLabel: "Check",
+          headerTitle: "Check"
         }}
       />
       <Tab.Screen
         name="Mode"
         component={Mode}
         options={{
-          tabBarLabel: "Mode"
+          tabBarLabel: "Mode",
+          headerTitle: "Mode"
         }}
       />
       <Tab.Screen
         name="List"
         component={List}
         options={{
-          tabBarLabel: "List"
+          tabBarLabel: "List",
+          headerTitle: "List"
         }}
       />
       <Tab.Screen
         name="Settings"
         component={Settings}
         options={{
-          tabBarLabel: "Settings"
+          tabBarLabel: "Settings",
+          headerTitle: "Settings"
         }}
       />
     </Tab.Navigator>
