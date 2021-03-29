@@ -14,7 +14,9 @@ const MainHeader = ({ navigation }) => {
         borderBottomWidth: 1
       }}
       backgroundColor="#ffffff"
-      rightComponent={{ icon: "login", color: "#000", size: 30 }}></Header>
+      rightComponent={{icon: "login", color: "#000", size: 30}}>
+      
+      </Header>
   );
 };
 
