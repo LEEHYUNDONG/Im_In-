@@ -13,3 +13,10 @@ rn w/ django rest framework
 - 아래 버튼 클릭시 헤더 타이틀 변경 수정해보기
 - 헤더 아이콘 삽입
 
+
+## 0407/4th_commit/LeeHyunDong
+- edit header title 탭 아이콘이 눌렸을 때 헤더 타이틀보이기
+- 헤더에 로그인 버튼 만들기
+- 전체 배경화면 만들기x
+- 로그인 화면으로 넘어가기
+
