@@ -2,14 +2,17 @@ import React, { useContext } from "react";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import MainStack from "./MainStack";
+import { Spinner } from "../components";
 import AuthStack from "./AuthStack";
-import MainHeader from "./MainHeader";
+import { ProgressContext}  from "../contexts";
 
-const Navigation = () => {
+const Navigation=() => {
+  const {inProgress}=useContext(ProgressContext);
+  
   return (
     <NavigationContainer>
-      <MainHeader />
       <MainStack />
+      {inProgress && <Spinner />}
     </NavigationContainer>
   );
 };

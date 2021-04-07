@@ -2,6 +2,9 @@ import React, { useContext, useEffect } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home, Check, Mode, List, Settings, Login } from "../screens/index";
 import { MaterialIcons } from "@expo/vector-icons";
+import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
+import { AuthStack } from "./AuthStack";
+
 
 const Tab = createBottomTabNavigator();
 
@@ -9,7 +12,24 @@ const TabIcon = ({ name, size, color }) => {
   return <MaterialIcons name={name} size={size} color={color} />;
 };
 
-const MainTab = () => {
+const MainTab = ({ navigation, route }) => {
+  useEffect(() => {
+    const routeName = getFocusedRouteNameFromRoute(route) ?? "Home";
+    const index = 0; // 수정 요망
+    navigation.setOptions({
+      headerTitle: routeName,
+      headerRight: () =>
+        index === 0 && (
+          <MaterialIcons
+            name="login"
+            size={26}
+            style={{ margin: 10 }}
+            onPress={() => navigation.navigate("Login", { screen: "Login" })} //login 버튼
+          />
+        )
+    });
+  }, [route]);
+
   return (
     <Tab.Navigator
       initialRouteName="Home"
