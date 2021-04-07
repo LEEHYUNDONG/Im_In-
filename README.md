@@ -18,5 +18,5 @@ rn w/ django rest framework
 - edit header title 탭 아이콘이 눌렸을 때 헤더 타이틀보이기
 - 헤더에 로그인 버튼 만들기
 - 전체 배경화면 만들기x
-- 로그인 화면으로 넘어가기
+- 로그인 버튼눌러서 화면 넘어가기 x
 
