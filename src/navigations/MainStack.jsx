@@ -2,14 +2,12 @@ import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { ThemeContext } from "styled-components/native";
 import MainTab from "./MainTab";
-import AuthStack from './AuthStack';
+
 
 const Stack = createStackNavigator();
 
 const MainStack = ({ navigation }) => {
   const theme = useContext(ThemeContext);
-
-
 
   return (
     <Stack.Navigator
@@ -17,7 +15,7 @@ const MainStack = ({ navigation }) => {
         headerTitleAlign: "center",
         headerTintColor: theme.headerTintColor,
         cardStyle: { backgroundColor: theme.backgroundColor },
-        headerBackTitleVisible: false,
+        headerBackTitleVisible: false
       }}>
       <Stack.Screen name="Home" component={MainTab} />
     </Stack.Navigator>

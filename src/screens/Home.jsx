@@ -1,8 +1,6 @@
 import React, { Component, useLayoutEffect } from "react";
 import styled from "styled-components/native";
 import { Text, StyleSheet, View } from "react-native";
-import MaterialIcons from "@expo/vector-icons";
-import AuthStack from '../navigations';
 import { ImageBackground } from "react-native";
 
 const Container = styled.SafeAreaView`
@@ -27,16 +25,20 @@ const styles = StyleSheet.create({
   }
 });
 
-const image = { uri: "../assets/backgroundIMG/loading.png" };
-
-const Home = ({}) => {
+//<Text style={{ fontSize: 24 }}>Home</Text>
+const Home=({}) => {
+  
   return (
-    <View>
-      <ImageBackground source={image} style>
-        <Text style={{   fontSize: 24   }}>Home</Text>
-      </ImageBackground>
-    </View>
-  );
+    <ImageBackground
+      style={{ width: "100%", height: "100%" }}
+      source={require("../../assets/backgroundIMG/loading.png")}
+      resizeMode="cover">
+      <View>
+      <Text style={{ fontSize: 24 }}>Home</Text>
+      </View>
+    </ImageBackground>
+    );
+  
 };
 
 export default Home;
