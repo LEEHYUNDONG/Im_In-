@@ -20,3 +20,6 @@ rn w/ django rest framework
 - 전체 배경화면 만들기x
 - 로그인 버튼눌러서 화면 넘어가기 x
 
+## 0408/LeeHyunDong
+- require cycle이라는 오류 제거
+
