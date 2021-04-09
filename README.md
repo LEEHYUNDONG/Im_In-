@@ -1,7 +1,7 @@
 # Im_In-
 rn w/ django rest framework
 
-## 0313/second_commit
+## 0313/second_commit/LeeHyunDong
 
  - navigator
  - bottom tab navigator
